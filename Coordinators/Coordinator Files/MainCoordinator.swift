@@ -95,8 +95,6 @@ class MainCoordinator: Coordinator {
     }
     
     func logout(){
-        let vc = SignUpViewController.instantiate()
-        vc.coordinator = self
         navigationController.viewControllers.removeAll()
         login()
     }
